@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.heading{
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.heading h1{
+    color: #1F99CB;
+    font-size: 3rem;
+}
+.heading p{
+    font-size: .9rem;
+    margin-top: 1.5rem;
+}
+
+.container-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containers{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1000px;
+    margin-bottom: 4%;
+}
+
+
+.card{
+    width: 240px;
+    height: 75vh;
+    border: 1px solid gray;
+    text-align: center;
+    padding:2rem 1.5rem 1rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.card img{
+    height: 70px;
+}
+
+.card h1{
+    font-size: 1.3rem;
+}
+
+.card p{
+    font-size: .8rem;
+    margin-top: 10px;
+}
+
+.card .price{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+.card .price sub{
+    margin-left: -15px;
+    font-size: .9rem;
+}
+.card .forYear{
+    font-size: .7rem;
+    margin-top: .8rem;
+}
+.card button{
+    padding: .6rem 3rem;
+    margin-top: 1.5rem;
+    border: none;
+    color:white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .5s;
+}
+.card button:hover{
+    transform: scale(1.04);
+}
+.card .btn-first{
+    background: #FE6A23;
+}
+.card .btn-second{
+    background: #1F99CB;
+}
+.card .btn-third{
+    background: #254C58;
+    font-size: .9rem;
+}
+.card .work{
+    font-size: .7rem;
+}
+
+.card h3{
+    margin-top: 4rem;
+    font-size: 1.2rem;
+}
+.card .grp{
+    height: 50px;
+}
+.card a{
+    font-size:.8rem;
+    color:black;
+    text-decoration: none;
+}
+.card a:hover{
+    text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .containers {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .card {
+        width: 70%; 
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .heading h1 {
+        font-size: 2rem; 
+    }
+
+    .heading p {
+        font-size: 0.8rem;
+    }
+
+    .card {
+        padding: 1.5rem 1rem 0.5rem;
+    }
+}
